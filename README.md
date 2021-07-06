@@ -27,6 +27,12 @@ persistently exciting based predictive control
 
          ![Mass spring system with partial observation](images/four_tank_PE_partial_obs_with_eq_terminal_sigma_alpha.png)
 
+      3. Potential remedy: full observation, set equilibrium point as the set point `ry = [0.64440373,0.75261324,0.80263158,1.14285714], ru = [1,1]), lambda_alpha*epsilon = 1.2, n = 1, L = 30, T = 400`
+
+         (**But sometimes still not stable**)
+
+         ![Full observation](images/four_tank_PE_full_obs_with_eq_terminal_sigma_alpha.png)
+
 3. Paper 3 Data-driven MPC with terminal cost and terminal constraints (ref: On the design of terminal ingredients for data-driven MPC)
 
 4. Paper 4 Stable, optimal, robust data-driven control: Formulas for Data-Driven Control (ref: Stabilization, Optimality, and Robustness)
