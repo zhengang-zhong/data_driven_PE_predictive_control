@@ -23,7 +23,7 @@ persistently exciting based predictive control
 
       1. The simulation for the case study included in their paper not stable. My simulation is designed for a nominal system (no noise no disturbance); therefore, a nominal predictive control with terminal equality constraints applied. Should I use the robust version to acquire stability? -> next: either find why it is not stable or implement the robust version to see what is gonna happen.
 
-      2. After adding the regularization term $\sigma_{alpha}$, the closed-loop is stable. However, constant tracking error exists. 
+      2. After adding the regularization term $\lambda_{\alpha}$ ($\lambda_{\alpha} \bar{\varepsilon} = 0.1$), the closed-loop is stable. However, constant tracking error exists. 
 
          ![Mass spring system with partial observation](images/four_tank_PE_partial_obs_with_eq_terminal_sigma_alpha.png)
 
