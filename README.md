@@ -21,7 +21,7 @@ persistently exciting based predictive control
 
    2. Example 2: four tank system
 
-      1. The simulation for the case study included in their paper not stable. My simulation is designed for a nominal system (no noise no disturbance); therefore, a nominal predictive control with terminal equality constraints applied. Should I use the robust version to acquire stability? -> next: either find why it is not stable or implement the robust version to see what is gonna happen.
+      1. The simulation for the case study included in their paper not stable. My simulation is designed for a nominal system (no noise no disturbance); therefore, a nominal predictive control with terminal equality constraints applied. Should I use the robust version to acquire stability? -> next: either find why it is not stable or implement the robust version to see what is gonna happen. Explanation: since the set point in the paper is not an equilibrium point, slack variable ($\lambda_{\sigma}$) for $y$ is need. $\lambda_{\alpha}$ is also needed for a stable controller.
 
       2. After adding the regularization term $\lambda_{\alpha}$ ($\lambda_{\alpha} \bar{\varepsilon} = 0.1$), the closed-loop is stable. However, constant tracking error exists. 
 
