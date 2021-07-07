@@ -39,9 +39,13 @@ persistently exciting based predictive control
 
          4. Potential remedy: full observation, set equilibrium point as the set point `ry = [0.64440373,0.75261324,0.80263158,1.14285714], ru = [1,1]), lambda_alpha*epsilon = 1.2, n = 1, L = 30, T = 400`
 
-         (**But sometimes still not stable**)
+            1. If `R=1e-4I` sometimes still not stable
 
          ![Full observation](images/four_tank_PE_full_obs_with_eq_terminal_sigma_alpha.png)
+
+         2. Fix by setting `R=I`
+
+            ![Full observation](images/four_tank_PE_full_obs_with_eq_terminal_sigma_alpha_R=1.png)
 
 3. Paper 3 Data-driven MPC with terminal cost and terminal constraints (ref: On the design of terminal ingredients for data-driven MPC)
 
