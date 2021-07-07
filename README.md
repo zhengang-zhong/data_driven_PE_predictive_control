@@ -49,6 +49,12 @@ persistently exciting based predictive control
 
 3. Paper 3 Data-driven MPC with terminal cost and terminal constraints (ref: On the design of terminal ingredients for data-driven MPC)
 
+   1. Using P provided by Julian
+
+      ![four tank with terminal ingredients](images/four_tank_PE_partial_obs_with_terminal_ingredients.png)
+
+   2. Next step: update the LMI function (may because some strictly LMI not satisfied)
+
 4. Paper 4 Stable, optimal, robust data-driven control: Formulas for Data-Driven Control (ref: Stabilization, Optimality, and Robustness)
 
    1. Stable feedback gain
