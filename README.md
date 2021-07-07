@@ -27,7 +27,17 @@ persistently exciting based predictive control
 
          ![Mass spring system with partial observation](images/four_tank_PE_partial_obs_with_eq_terminal_sigma_alpha.png)
 
-      3. Potential remedy: full observation, set equilibrium point as the set point `ry = [0.64440373,0.75261324,0.80263158,1.14285714], ru = [1,1]), lambda_alpha*epsilon = 1.2, n = 1, L = 30, T = 400`
+         3. By replace `Q = eye([1e-4]*nu)`  to  `Q = eye([1]*nu)` all fixed now.
+
+            1. 1e-4 * $I$
+
+            ![](images/four_tank_PE_partial_obs_with_eq_terminal_sigma_alpha_Q=1e-4.png)
+
+            2. $I$
+
+            ![](images/four_tank_PE_partial_obs_with_eq_terminal_sigma_alpha_Q=1.png)
+
+         4. Potential remedy: full observation, set equilibrium point as the set point `ry = [0.64440373,0.75261324,0.80263158,1.14285714], ru = [1,1]), lambda_alpha*epsilon = 1.2, n = 1, L = 30, T = 400`
 
          (**But sometimes still not stable**)
 
@@ -40,3 +50,9 @@ persistently exciting based predictive control
    1. Stable feedback gain
 
       ![Mass spring system with partial observation](images/mass_spring_stable_fb.png)
+
+
+
+
+
+Thanks for Julian's help. As the author of many of the papers above, he shared his insights about PE-based data-driven control and his simulation configurations. 
