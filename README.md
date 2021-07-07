@@ -27,7 +27,7 @@ persistently exciting based predictive control
 
          ![Mass spring system with partial observation](images/four_tank_PE_partial_obs_with_eq_terminal_sigma_alpha.png)
 
-         3. By replace `Q = eye([1e-4]*nu)`  to  `Q = eye([1]*nu)` all fixed now.
+         3. By replace `R = eye([1e-4]*nu)`  to  `R = eye([1]*nu)` all fixed now.
 
             1. 1e-4 * $I$
 
